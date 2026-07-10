@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Private keys and certificates
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+id_ecdsa
+
+# Credential files
+.netrc
+.npmrc
+.pypirc
+credentials.json
+auth.json
