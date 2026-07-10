@@ -106,7 +106,12 @@ Do not overwrite an existing file or directory without the user's permission. If
 Use the `skills` CLI through pnpm and install to the global scope:
 
 ```bash
-pnpm dlx skills@latest add <source> --global --agent codex --copy
+pnpm dlx skills@latest add <source> \
+  --skill <skill-name> \
+  --global \
+  --agent codex \
+  --copy \
+  --yes
 ```
 
 Select only the requested skills. Because the global skills directory is symlinked into this repository, installed files are written under `skills/`.
@@ -118,6 +123,15 @@ Local skills already stored under `skills/` do not need to be installed with the
 ### 4. Verify the skill
 
 Verify that the skill exists under `skills/<skill-name>/`, that `~/.agents/skills` resolves to the repository's `skills/` directory, and that the skill contains a valid `SKILL.md`.
+
+### Managed remote skills
+
+When adding or removing a copied remote skill, update this table in the same change. Do not list locally authored skills.
+
+| Skill | Source |
+| --- | --- |
+
+No remote skills are currently managed.
 
 ## Directory Structure
 
