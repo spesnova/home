@@ -1,0 +1,7 @@
+interface:
+  display_name: "Git Commit"
+  short_description: "Create conventional commits from the actual diff"
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#FFFFFF"
+  default_prompt: "Use $git-commit to inspect the current diff, choose an appropriate Conventional Commit message, and create the commit safely."
