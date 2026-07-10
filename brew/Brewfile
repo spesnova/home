@@ -1,0 +1,42 @@
+# Taps
+tap "oven-sh/bun"
+
+# CLI tools
+brew "fish"
+brew "gh"
+brew "ghq"
+brew "git"
+brew "git-secrets"
+brew "jq"
+brew "mas"
+brew "mise"
+brew "peco"
+brew "starship"
+brew "tree"
+brew "wget"
+brew "oven-sh/bun/bun"
+
+# Applications and vendor-distributed tools
+cask "adobe-creative-cloud"
+cask "amie"
+cask "bettertouchtool"
+cask "chatgpt"
+cask "claude"
+cask "codex-app"
+cask "cursor"
+cask "docker-desktop"
+cask "gather"
+cask "google-chrome"
+cask "ghostty"
+cask "ngrok"
+cask "notion"
+cask "raycast"
+cask "spotify"
+cask "zed"
+cask "zoom"
+
+# Mac App Store applications
+mas "Xcode", id: 497799835
+mas "1Password 7 - Password Manager", id: 1333542190
+mas "Slack for Desktop", id: 803453959
+mas "Amazon Kindle", id: 302584613
