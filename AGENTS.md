@@ -93,6 +93,8 @@ home/
 ├── README.md          # Overview and setup instructions for humans.
 ├── brew/
 │   └── Brewfile       # Homebrew packages, applications, and Mac App Store apps.
+├── codex/
+│   └── keybindings.json # Codex App keyboard shortcuts.
 ├── cursor/
 │   └── settings.json  # Cursor editor settings.
 ├── fish/
@@ -107,3 +109,4 @@ home/
 | `git/gitconfig` | `~/.gitconfig` |
 | `fish/config.fish` | `~/.config/fish/config.fish` |
 | `cursor/settings.json` | `~/Library/Application Support/Cursor/User/settings.json` |
+| `codex/keybindings.json` | `~/.codex/keybindings.json` |

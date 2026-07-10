@@ -1,0 +1,10 @@
+[
+  {
+    "command": "globalDictationToggle",
+    "key": "Ctrl+V"
+  },
+  {
+    "command": "toggleBrowserPanel",
+    "key": null
+  }
+]
