@@ -85,6 +85,40 @@ Verify that the requested software was installed successfully and that its Brewf
 
 Report anything that still requires authentication, a password, or other manual interaction.
 
+## Global skill management workflow
+
+When asked to add or manage a global agent skill:
+
+### 1. Treat the repository as the source of truth
+
+Store each skill as a local copy under `skills/<skill-name>/`.
+
+The contents of `skills/`, including copied remote skills, are the source of truth for global skills. Do not use a project-level `.agents/skills` directory or `skills-lock.json` in this repository.
+
+### 2. Use the global skills symlink
+
+Ensure `~/.agents/skills` is a symlink to this repository's `skills/` directory.
+
+Do not overwrite an existing file or directory without the user's permission. If the destination must be replaced, ask first unless the user has already explicitly authorized the replacement.
+
+### 3. Add remote skills with pnpm
+
+Use the `skills` CLI through pnpm and install to the global scope:
+
+```bash
+pnpm dlx skills@latest add <source> --global --agent codex --copy
+```
+
+Select only the requested skills. Because the global skills directory is symlinked into this repository, installed files are written under `skills/`.
+
+Review remote skill contents and their license before retaining them in the repository. Treat updates as normal repository changes and inspect the diff before committing.
+
+Local skills already stored under `skills/` do not need to be installed with the `skills` CLI.
+
+### 4. Verify the skill
+
+Verify that the skill exists under `skills/<skill-name>/`, that `~/.agents/skills` resolves to the repository's `skills/` directory, and that the skill contains a valid `SKILL.md`.
+
 ## Directory Structure
 
 ```bash
@@ -99,8 +133,11 @@ home/
 │   └── settings.json  # Cursor editor settings.
 ├── fish/
 │   └── config.fish    # Fish shell configuration.
-└── git/
-    └── gitconfig      # Global Git configuration.
+├── git/
+│   └── gitconfig      # Global Git configuration.
+└── skills/
+    └── <skill-name>/
+        └── SKILL.md    # Global agent skill instructions.
 ```
 
 ## Configuration files
@@ -110,3 +147,4 @@ home/
 | `fish/config.fish` | `~/.config/fish/config.fish` |
 | `cursor/settings.json` | `~/Library/Application Support/Cursor/User/settings.json` |
 | `codex/keybindings.json` | `~/.codex/keybindings.json` |
+| `skills/` | `~/.agents/skills` |
