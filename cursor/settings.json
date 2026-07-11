@@ -60,5 +60,7 @@
   "chatgpt.localeOverride": "ja-JP",
   "claudeCode.preferredLocation": "panel",
   "diffEditor.renderSideBySide": false,
+  "window.autoDetectColorScheme": false,
+  "workbench.colorTheme": "Default Dark Modern",
   "window.systemColorTheme": "dark"
 }
