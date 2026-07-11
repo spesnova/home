@@ -45,9 +45,8 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 60
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "remote.autoForwardPortsSource": "hybrid",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -57,10 +56,6 @@
       "comments": false,
       "strings": true
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "chatgpt.localeOverride": "ja-JP",
   "claudeCode.preferredLocation": "panel",
