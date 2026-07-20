@@ -144,7 +144,6 @@ home/
 ├── codex/
 │   └── keybindings.json # Codex App keyboard shortcuts.
 ├── cursor/
-│   ├── defaults.sh    # Cursor-specific macOS defaults.
 │   └── settings.json  # Cursor editor settings.
 ├── fish/
 │   └── config.fish    # Fish shell configuration.
