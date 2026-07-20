@@ -62,5 +62,6 @@
   "diffEditor.renderSideBySide": false,
   "window.autoDetectColorScheme": false,
   "workbench.colorTheme": "Default Dark Modern",
-  "window.systemColorTheme": "dark"
+  "window.systemColorTheme": "dark",
+  "diffEditor.experimental.showMoves": true
 }
