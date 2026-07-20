@@ -1,0 +1,4 @@
+[tools]
+node = "lts"
+pnpm = "10"
+"npm:portless" = "0.15.4"

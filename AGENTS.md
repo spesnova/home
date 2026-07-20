@@ -28,11 +28,15 @@ Create the required configuration symlinks.
 Do not overwrite an existing file or directory without the user's permission.
 If a destination already exists and must be replaced, ask the user before overwriting it.
 
-### 5. Verify the setup
+### 5. Install mise-managed tools
+
+Run `mise install` after creating the mise configuration symlink.
+
+### 6. Verify the setup
 
 Verify the resulting state.
 
-### 6. Report manual tasks
+### 7. Report manual tasks
 
 Report anything that still requires manual interaction.
 
@@ -84,6 +88,28 @@ After the software has been installed successfully, add it to the appropriate se
 Verify that the requested software was installed successfully and that its Brewfile entry is correct.
 
 Report anything that still requires authentication, a password, or other manual interaction.
+
+## Global development tool management workflow
+
+When asked to add or manage a global development tool distributed through npm:
+
+### 1. Treat the repository as the source of truth
+
+Declare the tool under `[tools]` in `mise/config.toml` using the `npm:<package-name>` backend.
+
+Use an exact version for pre-1.0 tools. Use a major version when updates within that major version should be allowed.
+
+Do not use `npm install --global` or `pnpm add --global` for managed tools.
+
+### 2. Use the global mise configuration symlink
+
+Ensure `~/.config/mise/config.toml` is a symlink to this repository's `mise/config.toml`.
+
+Do not overwrite an existing file or directory without the user's permission. If the destination must be replaced, ask first unless the user has already explicitly authorized the replacement.
+
+### 3. Install and verify the tool
+
+Run `mise install`, then verify the installed version and executable path.
 
 ## Global skill management workflow
 
@@ -149,6 +175,8 @@ home/
 │   └── config.fish    # Fish shell configuration.
 ├── git/
 │   └── gitconfig      # Global Git configuration.
+├── mise/
+│   └── config.toml    # Global development tools managed by mise.
 └── skills/
     └── <skill-name>/
         └── SKILL.md    # Global agent skill instructions.
@@ -161,4 +189,5 @@ home/
 | `fish/config.fish` | `~/.config/fish/config.fish` |
 | `cursor/settings.json` | `~/Library/Application Support/Cursor/User/settings.json` |
 | `codex/keybindings.json` | `~/.codex/keybindings.json` |
+| `mise/config.toml` | `~/.config/mise/config.toml` |
 | `skills/` | `~/.agents/skills` |

@@ -37,3 +37,5 @@ Open this repository in ChatGPT Codex and ask:
 ```markdown
 Set up this Mac according to AGENTS.md.
 ```
+
+Codex creates the configuration symlinks and runs `mise install`. Global development tools, including Node.js, pnpm, and npm-distributed CLIs, are declared in `mise/config.toml`.
