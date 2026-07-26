@@ -1,5 +1,7 @@
 # Taps
+tap "libsql/sqld"
 tap "oven-sh/bun"
+tap "tursodatabase/tap"
 
 # CLI tools
 brew "fish"
@@ -13,6 +15,7 @@ brew "mise"
 brew "peco"
 brew "starship"
 brew "tree"
+brew "tursodatabase/tap/turso"
 brew "wget"
 brew "oven-sh/bun/bun"
 
