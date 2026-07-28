@@ -1,7 +1,7 @@
 [
   {
     "command": "globalDictationToggle",
-    "key": "Ctrl+V"
+    "key": null
   },
   {
     "command": "toggleBrowserPanel",
