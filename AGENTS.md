@@ -158,6 +158,7 @@ When adding or removing a copied remote skill, update this table in the same cha
 | --- | --- |
 | `animation-vocabulary` | `emilkowalski/skills` |
 | `apple-design` | `emilkowalski/skills` |
+| `eli5` | `anthropics/claude-plugins-community` |
 | `emil-design-eng` | `emilkowalski/skills` |
 | `find-animation-opportunities` | `emilkowalski/skills` |
 | `improve-animations` | `emilkowalski/skills` |
