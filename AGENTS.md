@@ -156,8 +156,14 @@ When adding or removing a copied remote skill, update this table in the same cha
 
 | Skill | Source |
 | --- | --- |
-
-No remote skills are currently managed.
+| `animation-vocabulary` | `emilkowalski/skills` |
+| `apple-design` | `emilkowalski/skills` |
+| `emil-design-eng` | `emilkowalski/skills` |
+| `find-animation-opportunities` | `emilkowalski/skills` |
+| `improve-animations` | `emilkowalski/skills` |
+| `pick-ui-library` | `emilkowalski/skills` |
+| `prototype` | `emilkowalski/skills` |
+| `review-animations` | `emilkowalski/skills` |
 
 ## Directory Structure
 
