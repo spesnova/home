@@ -1,4 +1,5 @@
 # Taps
+tap "basecamp/tap"
 tap "libsql/sqld"
 tap "oven-sh/bun"
 tap "tursodatabase/tap"
@@ -20,6 +21,7 @@ brew "wget"
 brew "oven-sh/bun/bun"
 
 # Applications and vendor-distributed tools
+cask "basecamp/tap/hey"
 cask "1password"
 cask "adobe-creative-cloud"
 cask "amie"
