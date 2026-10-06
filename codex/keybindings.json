@@ -1,10 +1,30 @@
 [
   {
+    "command": "composer.submitInBackground",
+    "key": null
+  },
+  {
     "command": "globalDictationToggle",
     "key": null
   },
   {
-    "command": "toggleBrowserPanel",
+    "command": "openReviewTab",
+    "key": "Command+R"
+  },
+  {
+    "command": "realtimeVoice",
+    "key": "Ctrl+V"
+  },
+  {
+    "command": "reloadBrowserPage",
     "key": null
+  },
+  {
+    "command": "stepWorkspaceLayout",
+    "key": null
+  },
+  {
+    "command": "toggleSidePanel",
+    "key": "Command+I"
   }
 ]
